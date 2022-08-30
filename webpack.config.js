@@ -17,11 +17,11 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: './src/index.html'
     }),
-    // new CopyWebpackPlugin({
-    //   patterns: [
-    //     { from: './src/main.wasm', to: './' }, // output path is 'public' folder, already defined.
-    //     { from: './src/styles.css', to: './' }
-    //   ]
-    // })
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: './src/main.py', to: './' }, // output path is 'public' folder, already defined.
+        // { from: './src/styles.css', to: './' }
+      ]
+    })
   ]
 }

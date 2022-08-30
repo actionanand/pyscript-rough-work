@@ -6,12 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
   <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+  <py-env>
+    - numpy
+  </py-env>
   <title>Py-Script Rough Work</title>
 </head>
 <body>
-  <py-script>
-    name = 'Anand'
-    print(name)
-  </py-script>
+  <div id="output" class="text-3xl"></div>
+  <py-script src="./main.py"> </py-script>
+  <!-- <py-repl></py-repl> -->
 </body>
 </html>
