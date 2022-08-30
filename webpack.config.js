@@ -20,6 +20,7 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         { from: './src/main.py', to: './' }, // output path is 'public' folder, already defined.
+        { from: './src/utils.py', to: './' },
         // { from: './src/styles.css', to: './' }
       ]
     })
