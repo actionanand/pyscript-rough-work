@@ -12,17 +12,17 @@
       - ./utils.py
   </py-env>
   <title>Py-Script Rough Work</title>
-</head>
+<script defer src="index.js"></script></head>
 <body>
   <main class="container flex flex-col h-screen items-center justify-center" id="main-wrap">
     <div id="output" class="text-3xl"></div>
     <div class="flex gap-4">
       <button id="shuffle" class="mt-4 p-2 text-white bg-green-600 rounded" pys-onClick="shuffle_array"> Shuffle </button>
-      <button id="repl-btn" class="mt-4 p-2 text-white bg-green-600 rounded"> Hide Repl </button>
+      <button id="repl-btn" class="mt-4 p-2 text-white bg-green-600 rounded"> Show Repl </button>
     </div>
   </main>
   <py-script src="./main.py"> </py-script>
   
-  <py-repl id="python-repl"></py-repl>
+  <py-repl id="python-repl" style="display: none;"></py-repl>
 </body>
 </html>
