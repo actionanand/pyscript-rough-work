@@ -1,1 +1,21 @@
-(()=>{const e=document.getElementById("main-wrap"),n=document.getElementById("python-repl");n.style.display="none";const t=document.getElementById("repl-btn");t.innerText="Show Repl",t.addEventListener("click",(()=>{"none"===n.style.display?(n.style.display="block",e.classList.remove("h-screen"),t.innerText="Hide Repl"):(n.style.display="none",e.classList.add("h-screen"),t.innerText="Show Repl")}))})();
+const mainWrap = document.getElementById('main-wrap');
+
+const pyRepl = document.getElementById('python-repl');
+pyRepl.style.display = 'none';
+
+const replBtn = document.getElementById('repl-btn');
+replBtn.innerText = 'Show Repl';
+
+replBtn.addEventListener('click', () => {
+  // console.log(pyRepl);
+  if (pyRepl.style.display === 'none') {
+    pyRepl.style.display = 'block';
+    mainWrap.classList.remove('h-screen');
+    replBtn.innerText = 'Hide Repl';
+  } else {
+    pyRepl.style.display = 'none';
+    mainWrap.classList.add('h-screen');
+    replBtn.innerText = 'Show Repl';
+  }
+
+});
